@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Homer";
+  src: url(./fonts/Homer_Simpson.ttf);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(./assets/background.png);
+  background-size: cover;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.main-title {
+  font-family: "Homer";
+  font-size: 25px;
+}
+
+.quote-btn {
+  background-image: url(./assets/btn-bg.png);
+  background-size: contain;
+}
