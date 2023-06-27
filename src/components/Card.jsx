@@ -1,21 +1,23 @@
-const Card = () => {
+import { Container } from "react-bootstrap";
+
+/* eslint-disable react/prop-types */
+const Card = ({ quote }) => {
   return (
-    <section className="text-center">
+    <Container className="text-center">
       <img
-        src="https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FApuNahasapeemapetilon.png?1497567511629"
-        alt="PERSONAJE"
+        src={quote.image}
+        alt={`picture of ${quote.character}`}
+        className="w-50"
       />
       <figure>
         <blockquote className="blockquote">
-          <p>
-            By chilling my loins I increase the chances of impregnating my wife.
-          </p>
+          <p>{quote.quote}</p>
         </blockquote>
         <figcaption className="blockquote-footer">
-          Nombre del personaje <cite title="The Simpsons">The Simpsons</cite>
+          {quote.character} <cite title="The Simpsons">from The Simpsons</cite>
         </figcaption>
       </figure>
-    </section>
+    </Container>
   );
 };
 

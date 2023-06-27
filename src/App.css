@@ -21,6 +21,15 @@
 }
 
 .quote-btn {
-  background-image: url(./assets/btn-bg.png);
-  background-size: contain;
+  background-color: #000000;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  min-height: 100vh;
 }
